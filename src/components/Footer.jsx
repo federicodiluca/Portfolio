@@ -18,11 +18,11 @@ const Footer = (props) => {
           Federico Di Luca
         </a>{" "}
         using <i className="fab fa-react" /> */}
-        <p>
+        {/* <p>
           <small className="text-muted">
             Open source project forked by <a href="https://github.com/hashirshoaeb/home" target="_blank">Hashir Shoaib</a>
           </small>
-        </p>
+        </p> */}
       </Container>
     </footer>
   );

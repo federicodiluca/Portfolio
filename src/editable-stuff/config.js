@@ -49,9 +49,11 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/FeDL95.jpg"),
   imageSize: 375,
-  message:
-    " .NET Developer and Electronic Engineer based in Italy, currently focused on Full Stack Web Development", //. New technologies and best practices enthusiast.",
-    resume: require("../editable-stuff/resume.pdf"),
+  messages: [
+    "Electronic Engineer based in Pesaro, Italy",
+    "Currently focused on .NET Full Stack Development",
+  ],
+  resume: "https://www.dropbox.com/s/3rnhc3j6o5oeats/CV%20Federico%20Di%20Luca%20%28AL%29.pdf?dl=0",
 };
 
 // PROJECTS SECTION
@@ -96,23 +98,40 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "C#", value: 95 },
-    { name: "SQL (Sql Server)", value: 85 },
-    { name: "JavaScript", value: 70 },
-    { name: "HTML/CSS", value: 70 },
-    { name: "Python", value: 70 },
-    { name: "PHP", value: 55 },
+    { name: "https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white", value: 96, isImage: true },
+    { name: "https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white", value: 92, isImage: true },
+    { name: "https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white", value: 90, isImage: true },
+    // { name: "https://img.shields.io/badge/VS-%231877F2.svg?style=for-the-badge&logo=visual-studio&logoColor=white", value: 90, isImage: true },
+    { name: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E", value: 78, isImage: true },
+    { name: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white", value: 92, isImage: true },
+    { name: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white", value: 82, isImage: true },
+  ],
+  secondarySkills: [
+    { name: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white", value: 80, isImage: true },
+    { name: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white", value: 65, isImage: true },
+    { name: "https://img.shields.io/badge/WPF-5C2D91?style=for-the-badge&logo=.net&logoColor=white", value: 95, isImage: true },
+    { name: "https://img.shields.io/badge/Xamarin-3498DB?style=for-the-badge&logo=xamarin&logoColor=white", value: 60, isImage: true },
+    { name: "https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white", value: 68, isImage: true },
+    { name: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white", value: 62, isImage: true },
+    { name: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white", value: 90, isImage: true },
+    { name: "https://img.shields.io/badge/MatLab-CC2927?style=for-the-badge&logoColor=white", value: 80, isImage: true },
+    { name: "https://img.shields.io/badge/LabVIEW-FFDB00?style=for-the-badge&logo=LabVIEW&logoColor=black", value: 75, isImage: true },
+    { name: "https://img.shields.io/badge/LaTeX-008080.svg?style=for-the-badge&logo=LaTex", value: 78, isImage: true }
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 90 },
-    { name: "Collaboration", value: 100 },
-    { name: "Positivity", value: 80 },
     { name: "Adaptability", value: 90 },
+    { name: "Entrepreneurship", value: 85 },
     { name: "Problem Solving", value: 80 },
-    { name: "Empathy", value: 85 },
-    { name: "Organization", value: 100 },
-    { name: "Creativity", value: 80 },
+    { name: "Organization", value: 99 },
+    { name: "Team work", value: 95 },
+    { name: "Leadership", value: 90 },
+    { name: "Ability of work under pressure", value: 90 },
+    { name: "Attention to details", value: 85 },
   ],
+  imageSize: {
+    width:"20",
+    height:"20"
+  },
 };
 
 // GET IN TOUCH SECTION
