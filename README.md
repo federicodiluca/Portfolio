@@ -4,12 +4,12 @@
   <h1 align="center">My Developer's Portfolio</h1>
 
   <p align="center">
-    My personal website/portfolio template for demo purpose. Waiting to improve it and buy a nice domain...
+    My personal website/portfolio template for demo purpose. Working on it...
     <br />
   </p>
 </p>
 
-[![Site preview](/public/social-image.JPG)](https://fedl95.github.io/)
+[![Site preview](/public/social-image.JPG)](https://federicodiluca.github.io/)
 
 <br />
 <p align="center">
