@@ -9,7 +9,14 @@ const mainBody = {
   firstName: "Federico",
   middleName: "",
   lastName: "Di Luca",
-  message: " Passionate about changing the world with technology. ",
+  messages: 
+  [
+    "Engineer",
+    "Developer",
+    "Travel, Nature and Animals Lover",
+    "Passionate about 3D Printing",
+    "Engineer",
+  ],
   icons: [
     {
       image: "fa-github",

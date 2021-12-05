@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
 const MainBody = React.forwardRef(
-  ({ gradient, title, message, icons }, ref) => {
+  ({ gradient, title, messages, icons }, ref) => {
     return (
       <Jumbotron
         fluid
@@ -20,9 +20,19 @@ const MainBody = React.forwardRef(
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
-          <Typist className="lead typist" cursor={{ show: false }}>
+          <Typist className="lead typist" avgTypingSpeed={30000} startDelay={2000}
+            cursor={{ show: false, /* blink: true, element: '|', hideWhenDone: true, hideWhenDoneDelay: 1000, */}}>
             {" "}
-            {message}
+            {
+              messages.map((message, i) => {
+                  return (
+                    <div>
+                      <p className="lead text-center h3">{message}</p>
+                      {(i + 1 === messages.length) ? "" : <Typist.Backspace count={message.length} delay={2000}/> }
+                    </div>
+                  )}
+               )
+            }
           </Typist>
           <div className="p-5">
             {icons.map((icon, index) => (
