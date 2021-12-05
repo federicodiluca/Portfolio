@@ -12,7 +12,7 @@ const Footer = (props) => {
         <a
           className="badge badge-dark"
           rel="noopener"
-          href="https://github.com/FeDL95"
+          href="https://github.com/federicodiluca"
           aria-label="My GitHub"
         >
           Federico Di Luca

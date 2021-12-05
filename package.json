@@ -1,13 +1,13 @@
 {
   "name": "developers-portfolio",
   "description": "A personal static website/portfolio template hosted with GitHub Pages.",
-  "homepage": "https://FeDL95.github.io",
+  "homepage": "https://federicodiluca.github.io",
   "version": "2.0.0",
   "private": true,
   "author": {
     "name": "Federico Di Luca",
     "email": "federico.diluca95@gmail.com",
-    "url": "https://github.com/FeDL95"
+    "url": "https://github.com/federicodiluca"
   },
   "dependencies": {
     "axios": "^0.19.2",

@@ -13,7 +13,7 @@ const mainBody = {
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/FeDL95",
+      url: "https://github.com/federicodiluca",
     },
     // {
     //   image: "fa-facebook",
@@ -64,7 +64,7 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent 'for-fun' Projects",
-  gitHubUsername: "FeDL95", //i.e."johnDoe12Gh"
+  gitHubUsername: "federicodiluca", //i.e."johnDoe12Gh"
   reposLength: 2,
   specificRepos: [],
 };
