@@ -69,10 +69,10 @@ const about = {
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
 const repos = {
-  show: true,
+  show: false,
   heading: "Recent 'for-fun' Projects",
   gitHubUsername: "federicodiluca", //i.e."johnDoe12Gh"
-  reposLength: 2,
+  reposLength: 0,
   specificRepos: [],
 };
 
@@ -105,25 +105,23 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white", value: 96, isImage: true },
-    { name: "https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white", value: 92, isImage: true },
-    { name: "https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white", value: 90, isImage: true },
-    // { name: "https://img.shields.io/badge/VS-%231877F2.svg?style=for-the-badge&logo=visual-studio&logoColor=white", value: 90, isImage: true },
-    { name: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E", value: 78, isImage: true },
-    { name: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white", value: 92, isImage: true },
-    { name: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white", value: 82, isImage: true },
-  ],
-  secondarySkills: [
-    { name: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white", value: 80, isImage: true },
-    { name: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white", value: 65, isImage: true },
-    { name: "https://img.shields.io/badge/WPF-5C2D91?style=for-the-badge&logo=.net&logoColor=white", value: 95, isImage: true },
-    { name: "https://img.shields.io/badge/Xamarin-3498DB?style=for-the-badge&logo=xamarin&logoColor=white", value: 60, isImage: true },
-    { name: "https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white", value: 68, isImage: true },
-    { name: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white", value: 62, isImage: true },
-    { name: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white", value: 90, isImage: true },
-    { name: "https://img.shields.io/badge/MatLab-CC2927?style=for-the-badge&logoColor=white", value: 80, isImage: true },
-    { name: "https://img.shields.io/badge/LabVIEW-FFDB00?style=for-the-badge&logo=LabVIEW&logoColor=black", value: 75, isImage: true },
-    { name: "https://img.shields.io/badge/LaTeX-008080.svg?style=for-the-badge&logo=LaTex", value: 78, isImage: true }
+    // { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg", alt:"azure" },
+    // { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg", alt:"net" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg", alt:"net-core" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", alt:"c#" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg", alt:"visual-studio" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", alt:"visualvs-code" },
+    { url: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg", alt:"git" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg", alt:"sql-server" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", alt:"bootstrap" },
+    { url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", alt:"javascript" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain.svg", alt:"jquery" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt:"react" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg", alt:"my-sql" },
+    { url: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg", alt:"postman" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg", alt:"docker" },
+    { url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", alt:"python" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg", alt:"jupyter" },
   ],
   softSkills: [
     { name: "Adaptability", value: 90 },
@@ -150,19 +148,35 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
+      company: 'Websolute',
       role: '.NET Web Developer',
-      companylogo: require('../assets/img/Websolute_Logo.png'),
+      // companylogo: require('../assets/img/websolute_logo_200x100.png'),
       date: 'May 2021 – Present',
     },
     {
-      role: '.NET Automation Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/NGTEC_Logo.png'),
+      company: 'NGTEC',
+      role: '.NET Automation Developer',
+      // companylogo: require('../assets/img/ngtec_logo_200x100.png'),
       date: 'January 2020 – April 2021',
     },
+  ]
+}
+
+const articles = {
+  show: true,
+  heading: "Check out my paper",
+  data: [
+    {
+      title : "Human Being Detection from UWB NLOS Signals: Accuracy and Generality of Advanced Machine Learning Models",
+      date : "February 2022",
+      journal : "MDPI - Sensors",
+      url : "https://www.mdpi.com/1507940",
+      abstract : "This paper studies the problem of detecting human beings in non-line-of-sight (NLOS) conditions using an ultra-wideband radar. We perform an extensive measurement campaign in realistic environments, considering different body orientations, the obstacles’ materials, and radar–obstacle distances. We examine two main scenarios...",
+    }
   ]
 }
 
@@ -171,4 +185,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, articles };

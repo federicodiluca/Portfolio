@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
-function Skills({ heading, hardSkills, secondarySkills, softSkills }) {
+function Skills({ heading, hardSkills, softSkills }) {
   const skillsTabRef = React.useRef();
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -20,45 +20,31 @@ function Skills({ heading, hardSkills, secondarySkills, softSkills }) {
   );
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
-      <Container className="p-5 ">
+      <Container className="p-0 ">
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
           {heading}
         </h2>
-        <Tabs
-          className="skills-tabs"
-          defaultActiveKey="hard-skills"
-          id="skills-tabs"
-        >
-          <Tab
-            tabClassName="skills-tab lead"
-            eventKey="hard-skills"
-            title="Technical Skills"
-          >
-            <Row className="pt-3 px-1">
-              <SkillsTab skills={hardSkills} isScrolled={isScrolled} />
-            </Row>
-          </Tab>
-          <Tab
-            tabClassName="skills-tab lead"
-            eventKey="secondary-skills"
-            title="Secondary Skills"
-          >
-            <Row className="pt-3 px-1">
-              <SkillsTab skills={secondarySkills} isScrolled={isScrolled} />
-            </Row>
-          </Tab>
-          <Tab
-            tabClassName="skills-tab lead"
-            eventKey="soft-skills"
-            title="Soft Skills"
-          >
-            <Row className="pt-3 px-1">
-              <SkillsTab skills={softSkills} isScrolled={isScrolled} />
-            </Row>
-          </Tab>
-        </Tabs>
+        <Row className="pt-3 px-1">
+          <SkillsTab skills={softSkills} isScrolled={isScrolled} />
+        </Row>
+        <Row className="pt-5 px-1">
+          <p align="center">
+            {hardSkills.map((skill, index) => (
+              <SkillsImage
+                url={skill.url}
+                alt={skill.alt}
+              />
+            ))}
+          </p>
+        </Row>
       </Container>
     </Jumbotron>
+  );
+}
+
+function SkillsImage({ url, alt }) {
+  return (
+      <img src={url} alt={alt} width="75" height="75" class="px-1"/> 
   );
 }
 
