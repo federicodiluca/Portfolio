@@ -3,6 +3,11 @@ const navBar = {
   show: true,
 };
 
+const contactForm = {
+  show: true,
+  formspree_id: "moqrwnnr",
+}
+
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #9b59b6",
@@ -142,7 +147,7 @@ const skills = {
 // GET IN TOUCH SECTION
 const getInTouch = {
   show: true,
-  heading: "Get In Touch",
+  heading: "Get in Touch",
   message: "Feel free to email me at",
   email: "federico.diluca95@gmail.com",
 };
@@ -185,4 +190,4 @@ const articles = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, articles };
+export { navBar, contactForm, mainBody, about, repos, skills, leadership, getInTouch, experiences, articles };

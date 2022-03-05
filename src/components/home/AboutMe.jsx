@@ -1,5 +1,6 @@
 import React from "react";
 import Pdf from "../../editable-stuff/resume.pdf";
+import ContactFormModal from "./ContactFormModal";
 
 import axios from "axios";
 
@@ -7,7 +8,7 @@ const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
 );
 
-const AboutMe = ({ heading, messages, link, imgSize, resume }) => {
+const AboutMe = ({ heading, messages, link, imgSize, resume, contactForm }) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
   const [showPic, setShowPic] = React.useState(Boolean(link));
 
@@ -54,8 +55,8 @@ const AboutMe = ({ heading, messages, link, imgSize, resume }) => {
                 return (<p className="lead text-center">{message}</p>) 
               })
             }
-            {resume && (
-              <p className="lead text-center">
+            <p className="lead text-center">
+              {resume && (
                 <a
                   className="btn btn-outline-dark btn-lg mt-4"
                   href={resume}
@@ -64,10 +65,22 @@ const AboutMe = ({ heading, messages, link, imgSize, resume }) => {
                   role="button"
                   aria-label="Resume/CV"
                 >
-                  Resume
+                  Resume <img src="https://img.icons8.com/material-rounded/24/000000/download--v1.png" width="20" height="20"/>
                 </a>
+                )}
+              {contactForm.show && (
+                <ContactFormModal
+                 contactForm={contactForm} 
+                 isButton={true}
+                 text={
+                  (
+                    <>
+                      Contact me <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-email-flatart-icons-outline-flatarticons.png" width="20" height="20"/>
+                    </>
+                  )
+                 }/>
+              )}
               </p>
-            )}
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@
     "url": "https://github.com/federicodiluca"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
     "gh-pages": "^2.2.0",
@@ -20,6 +21,7 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",
     "react-loading-skeleton": "^2.1.1",
+    "react-modal": "^3.14.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",

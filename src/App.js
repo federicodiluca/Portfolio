@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import {
   navBar,
+  contactForm,
   mainBody,
   about,
   repos,
@@ -41,6 +42,7 @@ const Home = React.forwardRef((props, ref) => {
           link={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
+          contactForm={contactForm}
         />
       )}
       {
@@ -97,6 +99,7 @@ const App = () => {
             heading={getInTouch.heading}
             message={getInTouch.message}
             email={getInTouch.email}
+            contactForm={contactForm}
           />
         )}
       </Footer>
