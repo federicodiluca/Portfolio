@@ -11,6 +11,12 @@
 
 [![Site preview](/public/social-image.JPG)](https://federicodiluca.github.io/)
 
+## Deploy Info
+```
+ npm run build
+ npm run custom-deploy
+```
+
 <br />
 <p align="center">
   <p align="center">
