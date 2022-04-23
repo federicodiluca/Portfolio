@@ -14,7 +14,7 @@
 ## Deploy Info
 ```
  npm run build
- npm run deploy
+ npm run custom-deploy
 ```
 
 <br />
