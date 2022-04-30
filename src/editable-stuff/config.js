@@ -65,7 +65,8 @@ const about = {
     "Electronic Engineer based in Pesaro, Italy",
     "Currently focused on .NET Full Stack Development",
   ],
-  resume: "https://www.dropbox.com/s/3rnhc3j6o5oeats/CV%20Federico%20Di%20Luca%20%28AL%29.pdf?dl=0",
+  // resume: "https://www.dropbox.com/s/3rnhc3j6o5oeats/CV%20Federico%20Di%20Luca%20%28AL%29.pdf?dl=0",
+  resume: require("../editable-stuff/CV Federico Di Luca (AL).pdf"),
 };
 
 // PROJECTS SECTION
