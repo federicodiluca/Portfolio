@@ -59,14 +59,14 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/FeDL95.jpg"),
+  imageLink: require("../editable-stuff/profile-pic.png"),
   imageSize: 375,
   messages: [
     "Electronic Engineer based in Pesaro, Italy",
     "Currently focused on .NET Full Stack Development",
   ],
   // resume: "https://www.dropbox.com/s/3rnhc3j6o5oeats/CV%20Federico%20Di%20Luca%20%28AL%29.pdf?dl=0",
-  resume: require("../editable-stuff/CV Federico Di Luca (AL).pdf"),
+  resume: require("../editable-stuff/CV Federico Di Luca.pdf"),
 };
 
 // PROJECTS SECTION
@@ -90,12 +90,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/FeDL95.jpg"), 
+      img: require("../editable-stuff/profile-pic.png"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/FeDL95.jpg"), 
+      img: require("../editable-stuff/profile-pic.png"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
