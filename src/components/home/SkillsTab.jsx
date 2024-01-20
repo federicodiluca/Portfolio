@@ -19,6 +19,9 @@ function SkillsSection({ skills, isScrolled }) {
 }
 
 function SkillsTab({ skills, isScrolled }) {
+  if (!skills || skills.length < 1)
+    return (<></>);
+    
   return (
     <>
       <Col xs={12} md={6}>

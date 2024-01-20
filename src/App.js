@@ -10,6 +10,7 @@ import {
   skills,
   getInTouch,
   experiences,
+  education,
   articles
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
@@ -23,6 +24,7 @@ import Skills from "./components/home/Skills";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 import Experience from "./components/home/Experience";
+import Education from "./components/home/Education";
 import Articles from "./components/home/Articles.jsx";
 
 const Home = React.forwardRef((props, ref) => {
@@ -48,6 +50,11 @@ const Home = React.forwardRef((props, ref) => {
       {
         experiences.show && (
           <Experience experiences={experiences}/>
+        )
+      }
+      {
+        education.show && (
+          <Education experiences={education}/>
         )
       }
       {

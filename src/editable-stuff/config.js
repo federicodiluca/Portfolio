@@ -62,8 +62,10 @@ const about = {
   imageLink: require("../editable-stuff/profile-pic.png"),
   imageSize: 375,
   messages: [
-    "Electronic Engineer based in Pesaro, Italy",
-    "Currently focused on .NET Full Stack Development",
+    // "Electronic Engineer based in Pesaro, Italy",
+    // "Currently focused on .NET Full Stack Development",
+    "I am a very passionate .NET Developer, graduated with honors in Electronic and Telecommunications Engineering. I love joining dynamic teams and contributing to different projects, focusing on coding best practices and clean architecture principles.",
+    "Currently working as Technical Leader | Backend Engineer.",
   ],
   // resume: "https://www.dropbox.com/s/3rnhc3j6o5oeats/CV%20Federico%20Di%20Luca%20%28AL%29.pdf?dl=0",
   resume: require("../editable-stuff/CV Federico Di Luca.pdf"),
@@ -109,7 +111,7 @@ const leadership = {
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: "Main Tools",
   hardSkills: [
     // { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg", alt:"azure" },
     // { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg", alt:"net" },
@@ -129,16 +131,16 @@ const skills = {
     { url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", alt:"python" },
     { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg", alt:"jupyter" },
   ],
-  softSkills: [
-    { name: "Adaptability", value: 90 },
-    { name: "Entrepreneurship", value: 85 },
-    { name: "Problem Solving", value: 80 },
-    { name: "Organization", value: 99 },
-    { name: "Team work", value: 95 },
-    { name: "Leadership", value: 90 },
-    { name: "Ability of work under pressure", value: 90 },
-    { name: "Attention to details", value: 85 },
-  ],
+  // softSkills: [
+  //   { name: "Adaptability", value: 90 },
+  //   { name: "Entrepreneurship", value: 85 },
+  //   { name: "Problem Solving", value: 80 },
+  //   { name: "Organization", value: 99 },
+  //   { name: "Team work", value: 95 },
+  //   { name: "Leadership", value: 90 },
+  //   { name: "Ability of work under pressure", value: 90 },
+  //   { name: "Attention to details", value: 85 },
+  // ],
   imageSize: {
     width:"20",
     height:"20"
@@ -156,6 +158,7 @@ const getInTouch = {
 const experiences = {
   show: true,
   heading: "Experiences",
+  footer: 'C\#, .NET Core, .NET Framework, WPF, XAML, Razor Pages, MVC, Web Api, Blazor, Javascript, Jquery, Bootstrap, Entity Framework, Hangfire, Postman, Swagger, Docker, Git, TFS, SqlServer, SSMS, IIS Server, MongoDB, MySql.',
   data: [
     {
       company: 'Websolute',
@@ -172,9 +175,36 @@ const experiences = {
   ]
 }
 
+const education = {
+  show: true,
+  heading: "Education",
+  //footer: '',
+  data: [
+    {
+      title: 'Master\'s Degree',
+      institute: 'University of Bologna',
+      mark: '110 L / 110',
+      subTitle: 'Electronic and Telecommunications Engineering',
+      date: 'September 2017 - December 2019',
+    },
+    {
+      title: 'Bachelor\'s Degree',
+      institute: 'University of Bologna',
+      mark: '109 / 110',
+      subTitle: 'Biomedical Engineering',
+      date: 'September 2014 - July 2017',
+    },
+    {
+      title: 'Erasmus International Experience',
+      institute: 'Universitat Polytècnica de Catalunya, Barcelona',
+      date: 'September 2018 - February 2019',
+    },
+  ]
+}
+
 const articles = {
   show: true,
-  heading: "Check out my paper",
+  heading: "Research Articles",
   data: [
     {
       title : "Human Being Detection from UWB NLOS Signals: Accuracy and Generality of Advanced Machine Learning Models",
@@ -191,4 +221,4 @@ const articles = {
 //   show: false,
 // };
 
-export { navBar, contactForm, mainBody, about, repos, skills, leadership, getInTouch, experiences, articles };
+export { navBar, contactForm, mainBody, about, repos, skills, leadership, getInTouch, experiences,education, articles };

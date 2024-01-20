@@ -9,7 +9,7 @@ import {
 
 const Articles = ({articles}) => {
     return (  
-        <section className="section">
+        <section className="section mt-5">
             <Container>
                 <h2 className="display-4 mb-5 text-center">
                     {articles.heading}

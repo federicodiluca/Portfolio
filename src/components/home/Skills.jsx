@@ -21,10 +21,10 @@ function Skills({ heading, hardSkills, softSkills }) {
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
       <Container className="p-0 ">
-        <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
+        <h2 ref={skillsTabRef} className="display-4 text-center">
           {heading}
         </h2>
-        <Row className="pt-3 px-1">
+        <Row className="px-1">
           <SkillsTab skills={softSkills} isScrolled={isScrolled} />
         </Row>
         <Row className="pt-5 px-1">
