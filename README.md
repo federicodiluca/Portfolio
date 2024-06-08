@@ -11,8 +11,17 @@
 
 [![Site preview](/public/social-image.JPG)](https://federicodiluca.github.io/)
 
-## Deploy Info
+## Run
+
+Make sure to be in `home` folder:
+
+```bash
+npm start
 ```
+
+## Deploy Info
+
+```bash
  npm run build
  npm run custom-deploy
 ```
