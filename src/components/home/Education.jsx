@@ -16,8 +16,8 @@ const Education = ({experiences}) => {
                     </h2>
                     <Row>
                         {
-                            experiences.data.map(data => {
-                                return <EducationCard key={data.title} data={data} />
+                            experiences.data.map((d, i) => {
+                                return <EducationCard key={d.title} data={d} col={i == experiences.data.length - 1 && i % 2 == 0 ? 12 : 6} />
                             })
                         }
                     </Row>

@@ -7,7 +7,7 @@ import {
 } from "react-bootstrap";
 
 const Experience = ({experiences}) => {
-    return (  
+    return (
         <section className="section">
             <Container>
                 <Jumbotron fluid className="bg-white">
@@ -16,8 +16,9 @@ const Experience = ({experiences}) => {
                     </h2>
                     <Row>
                         {
-                            experiences.data.map(data => {
-                                return <ExperienceCard key={data.company} data={data} />
+                            experiences.data.map((d, i) => {
+                                console.log(i)
+                                return <ExperienceCard key={d.company} data={d} col={i == experiences.data.length - 1 && i % 2 == 0 ? 12 : 6} />
                             })
                         }
                     </Row>
