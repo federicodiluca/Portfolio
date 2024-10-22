@@ -64,8 +64,8 @@ const about = {
   messages: [
     // "Electronic Engineer based in Pesaro, Italy",
     // "Currently focused on .NET Full Stack Development",
-    "Passionate .NET Development Technical Leader, graduated with honors in Electronic and Telecommunications Engineering from the University of Bologna.",
-    "Experienced in leading backend development for Marketing and E-commerce projects, I drive innovation and excellence within the R&D team.", 
+    "Passionate .NET Development Technical Leader and Computer Science Teacher in High School. Graduated with honors in Electronic and Telecommunications Engineering from the University of Bologna.",
+    "Experienced in leading backend development for Marketing and E-commerce projects, I drive innovation and excellence within the R\&D team.",
     "Skilled in coding best practices and clean architecture principles, I thrive in dynamic teams and deliver high-quality, scalable solutions."
   ],
   // resume: "https://www.dropbox.com/s/3rnhc3j6o5oeats/CV%20Federico%20Di%20Luca%20%28AL%29.pdf?dl=0",
@@ -163,17 +163,27 @@ const experiences = {
   footer: 'C\#, .NET Core, .NET Framework, Razor Pages, MVC, Web Api, Blazor, Javascript, Typescript, React, NextJs, Jquery, Bootstrap, Entity Framework, Hangfire, Postman, Swagger, Docker, Git, TFS, SqlServer, SSMS, IIS Server, MongoDB, MySql, WPF, XAML.',
   data: [
     {
+      company: 'Liceo Scientifico Torelli',
+      role: 'Computer Science Teacher',
+      date: 'September 2024 – Present',
+    },
+    {
       company: 'Websolute',
       role: 'Technical Leader',
-      // companylogo: require('../assets/img/websolute_logo_200x100.png'),
-      date: 'January 2024 – Present',
-      },
-      {
-        company: 'Websolute',
-        role: 'Backend Developer',
-        // companylogo: require('../assets/img/websolute_logo_200x100.png'),
-        date: 'May 2021 – December 2023',
+      date: 'May 2021 – Present',
     },
+    // {
+    //   company: 'Websolute',
+    //   role: 'Technical Leader',
+    //   // companylogo: require('../assets/img/websolute_logo_200x100.png'),
+    //   date: 'January 2024 – Present',
+    // },
+    // {
+    //   company: 'Websolute',
+    //   role: 'Backend Developer',
+    //   // companylogo: require('../assets/img/websolute_logo_200x100.png'),
+    //   date: 'May 2021 – December 2023',
+    // },
     {
       company: 'NGTEC',
       role: 'Automation Developer',
