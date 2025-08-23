@@ -17,7 +17,9 @@ const mainBody = {
   messages: 
   [
     "Engineer",
+    "Teacher",
     "Developer",
+    "Tech Enthusiast",
     "Travel, Nature and Animals Lover",
     "Passionate about 3D Printing",
     "Engineer",
@@ -62,11 +64,12 @@ const about = {
   imageLink: require("../editable-stuff/profile-pic.png"),
   imageSize: 375,
   messages: [
-    // "Electronic Engineer based in Pesaro, Italy",
-    // "Currently focused on .NET Full Stack Development",
-    "Passionate .NET Development Technical Leader and Computer Science Teacher in High School. Graduated with honors in Electronic and Telecommunications Engineering from the University of Bologna.",
-    "Experienced in leading backend development for Marketing and E-commerce projects, I drive innovation and excellence within the R\&D team.",
-    "Skilled in coding best practices and clean architecture principles, I thrive in dynamic teams and deliver high-quality, scalable solutions."
+    // "Passionate .NET Development Technical Leader and Computer Science Teacher in High School. Graduated with honors in Electronic and Telecommunications Engineering from the University of Bologna.",
+    // "Experienced in leading backend development for Marketing and E-commerce projects, I drive innovation and excellence within the R\&D team.",
+    // "Skilled in coding best practices and clean architecture principles, I thrive in dynamic teams and deliver high-quality, scalable solutions."
+    "I am a Computer Science teacher and former .NET Technical Leader with experience in developing web solutions for Brand, Marketing and Commerce. Throughout my career, I have led development teams, designed software architectures, and managed end-to-end IT projects.",
+    "Today I combine my technical expertise with a strong passion for education, supporting companies and organizations as a software developer, IT consultant, and technical trainer.",
+    "Open to project-based collaborations in software development, consulting, project management, and training."
   ],
   // resume: "https://www.dropbox.com/s/3rnhc3j6o5oeats/CV%20Federico%20Di%20Luca%20%28AL%29.pdf?dl=0",
   resume: require("../editable-stuff/CV Federico Di Luca.pdf"),
@@ -118,6 +121,8 @@ const skills = {
     // { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg", alt:"net" },
     { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg", alt:"net-core" },
     { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", alt:"c#" },
+    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg", alt:"jupyter" },
+    { url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", alt:"python" },
     { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg", alt:"visual-studio" },
     // { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", alt:"visualvs-code" },
     { url: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg", alt:"git" },
@@ -130,8 +135,6 @@ const skills = {
     { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt:"react" },
     { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg", alt:"docker" },
     { url: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg", alt:"postman" },
-    { url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg", alt:"jupyter" },
-    { url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", alt:"python" },
   ],
   // softSkills: [
   //   { name: "Adaptability", value: 90 },
@@ -160,7 +163,7 @@ const getInTouch = {
 const experiences = {
   show: true,
   heading: "Experiences",
-  footer: 'C\#, .NET Core, .NET Framework, Razor Pages, MVC, Web Api, Blazor, Javascript, Typescript, React, NextJs, Jquery, Bootstrap, Entity Framework, Hangfire, Postman, Swagger, Docker, Git, TFS, SqlServer, SSMS, IIS Server, MongoDB, MySql, WPF, XAML.',
+  footer: 'C\#, Python, .NET Core, .NET Framework, Razor Pages, MVC, Web Api, Blazor, Javascript, Typescript, React, NextJs, Jquery, Bootstrap, Entity Framework, Hangfire, Postman, Swagger, Docker, Git, TFS, SqlServer, SSMS, IIS Server, MongoDB, MySql, WPF, XAML.',
   data: [
     {
       company: 'Liceo Scientifico Torelli',
@@ -168,9 +171,14 @@ const experiences = {
       date: 'September 2024 – Present',
     },
     {
+      company: 'Python Coding and Spreadsheets Courses - DM65',
+      role: 'STEM Expert Trainer',
+      date: 'Academic Year 2024–2025'
+    },
+    {
       company: 'Websolute',
       role: 'Technical Leader',
-      date: 'May 2021 – Present',
+      date: 'May 2021 – December 2024',
     },
     // {
     //   company: 'Websolute',
