@@ -166,15 +166,25 @@ const experiences = {
   footer: 'C\#, Python, .NET Core, .NET Framework, Razor Pages, MVC, Web Api, Blazor, Javascript, Typescript, React, NextJs, Jquery, Bootstrap, Entity Framework, Hangfire, Postman, Swagger, Docker, Git, TFS, SqlServer, SSMS, IIS Server, MongoDB, MySql, WPF, XAML.',
   data: [
     {
-      company: 'Liceo Scientifico Torelli',
+      company: 'IIS Gobetti De Gasperi',
       role: 'Computer Science Teacher',
-      date: 'September 2024 – Present',
-    },
+      date: 'September 2025 – Present',
+    },    
     {
-      company: 'Python Coding and Spreadsheets Courses - DM65',
-      role: 'STEM Expert Trainer',
-      date: 'Academic Year 2024–2025'
+      company: 'Liceo Scientifico Torelli',
+      role: 'CS Teacher & STEM Trainer',
+      date: 'Academic Year 2024–2025',
     },
+    // {
+    //   company: 'Liceo Scientifico Torelli',
+    //   role: 'Computer Science Teacher',
+    //   date: 'Academic Year 2024–2025',
+    // },
+    // {
+    //   company: 'Python Coding and Spreadsheets Courses - DM65',
+    //   role: 'STEM Expert Trainer',
+    //   date: 'Academic Year 2024–2025'
+    // },
     {
       company: 'Websolute',
       role: 'Technical Leader',

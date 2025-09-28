@@ -13,7 +13,7 @@
 
 ## Run
 
-Make sure to be in `home` folder:
+Make sure to be in `home` folder and using `node 14.18.1`:
 
 ```bash
 npm start
